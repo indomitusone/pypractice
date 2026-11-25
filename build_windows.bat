@@ -3,7 +3,7 @@ setlocal
 set PYINSTALLER_VERSION=6.22.3
 
 echo ========================================================
-echo   Packaging PyPractice for Windows (Version 0.2.0)
+echo   Packaging PyPractice for Windows (Version 0.2.1)
 echo ========================================================
 
 REM Check whether PyInstaller is installed

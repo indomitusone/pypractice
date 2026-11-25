@@ -1,4 +1,4 @@
-"""Pruebas automatizadas para PyPractice v0.2.0 (seguridad, diagnósticos, temas, runner, editor y UI)."""
+"""Pruebas automatizadas para PyPractice v0.2.1 (seguridad, diagnósticos, temas, runner, editor y UI)."""
 
 import gc
 import os
@@ -335,7 +335,7 @@ class TestEditorAndAppSmoke(unittest.TestCase):
         self.assertFalse(ed.text.get("2.0", "2.end").lstrip().startswith("#"))
 
     def test_app_instantiation_themes_and_console_protection(self):
-        self.assertEqual(APP_VERSION, "0.2.0")
+        self.assertEqual(APP_VERSION, "0.2.1")
         with tempfile.TemporaryDirectory() as tmp:
             app = PyPracticeApp(self.root, settings=SettingsManager(base_dir=Path(tmp)))
             try:

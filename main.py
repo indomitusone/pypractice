@@ -1,4 +1,4 @@
-"""PyPractice v0.2.0 — Entorno educativo, seguro y accesible para aprender Python."""
+"""PyPractice v0.2.1 — Entorno educativo, seguro y accesible para aprender Python."""
 
 import ctypes
 import os
@@ -19,7 +19,7 @@ from settings import SettingsManager
 from templates import CHEATSHEET_SECTIONS, CODE_TEMPLATES, format_practice_export
 from themes import THEMES, configure_ttk_styles, get_theme
 
-APP_VERSION = "0.2.0"
+APP_VERSION = "0.2.1"
 MIN_FONT_SIZE = 8
 MAX_FONT_SIZE = 28
 DEFAULT_FONT_SIZE = 12

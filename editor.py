@@ -211,7 +211,11 @@ class CodeEditor(tk.Frame):
         # Asistencia inteligente de escritura Python
         self.text.bind("<Tab>", self._on_tab)
         self.text.bind("<Shift-Tab>", self._on_shift_tab)
-        self.text.bind("<ISO_Left_Tab>", self._on_shift_tab)
+        try:
+            self.text.bind("<ISO_Left_Tab>", self._on_shift_tab)
+        except tk.TclError:
+            # Tk < 8.6.13 en Windows (p. ej. Python 3.10) no define el keysym X11 ISO_Left_Tab
+            pass
         self.text.bind("<Return>", self._on_return)
         self.text.bind("<BackSpace>", self._on_backspace)
         self.text.bind("<Key>", self._on_key_press)
