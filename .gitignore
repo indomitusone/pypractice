@@ -1,0 +1,51 @@
+# Secrets, credentials & private keys (NEVER commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+*.jks
+id_rsa*
+id_ed25519*
+*secret*
+*credentials*
+
+# Local databases & runtime artifacts
+*.db
+*.sqlite
+*.sqlite3
+temp_pypractice_run.py
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+ENV/
+env/
+
+# Testing, linting & coverage caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# PyInstaller / Packaging
+build/
+dist/
+
+# Editors & OS metadata
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini
